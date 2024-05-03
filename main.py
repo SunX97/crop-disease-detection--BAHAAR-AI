@@ -1,10 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-import my_custom_layer
 
-#Register the custom layer
-tf.keras.layers.Serializable()(my_custom_layer.MyCustomLayer)
 
 
 #Tensorflow Model Prediction
