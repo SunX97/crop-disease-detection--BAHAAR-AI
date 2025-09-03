@@ -6,11 +6,22 @@
   <img src="https://img.shields.io/badge/Diseases-38_Classes-blue" alt="38 Disease Classes">
   <img src="https://img.shields.io/badge/Crops-14_Types-orange" alt="14 Crop Types">
   <img src="https://img.shields.io/badge/Dataset-87K_Images-yellow" alt="87K Images">
+  <br/>
+  <img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel" alt="Deployed on Vercel">
+  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Live Status">
 </div>
 
-## 🚀 Live Demo
+## 🚀 Live Demo - Deployed on Vercel
 
-🌐 **[View Live Website](https://bahaar-ai.vercel.app/)**
+### 🌐 **Live Website URLs:**
+
+🔗 **Primary:** **[https://bahaar-ai-crop-disease-detection-9pymn2mxw.vercel.app](https://bahaar-ai-crop-disease-detection-9pymn2mxw.vercel.app)**
+
+🔗 **Clean URL:** **[https://bahaar-ai-crop-detection.vercel.app](https://bahaar-ai-crop-detection.vercel.app)**
+
+> 🎯 **Experience the full interactive AI-powered crop disease detection system live!**
+> 
+> ✨ Features: Drag & drop image upload, 3D animations, particle effects, dark/light theme, real-time disease detection simulation, and more!
 
 ## 📖 Overview
 
@@ -115,8 +126,8 @@ bahaar-ai/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/bahaar-ai/crop-disease-detection.git
-cd crop-disease-detection
+git clone https://github.com/SunX97/crop-disease-detection--BAHAAR-AI.git
+cd crop-disease-detection--BAHAAR-AI
 ```
 
 2. **Install dependencies**
@@ -270,5 +281,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <h3>🌱 Made with ❤️ for sustainable agriculture</h3>
   <p>Protecting crops with artificial intelligence</p>
   
-  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bahaar-ai/crop-disease-detection)
+  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/SunX97/crop-disease-detection--BAHAAR-AI)
 </div>
