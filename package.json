@@ -1,0 +1,63 @@
+{
+  "name": "bahaar-ai-crop-disease-detection",
+  "version": "1.0.0",
+  "description": "BAHAAR AI - Advanced crop disease detection system using deep learning and computer vision",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build completed'",
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "agriculture",
+    "crop-disease-detection",
+    "machine-learning",
+    "deep-learning",
+    "computer-vision",
+    "ai",
+    "farming",
+    "plant-pathology",
+    "tensorflow",
+    "cnn"
+  ],
+  "author": {
+    "name": "BAHAAR AI Team",
+    "email": "contact@bahaarai.com",
+    "url": "https://bahaar-ai.vercel.app"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahaar-ai/crop-disease-detection"
+  },
+  "homepage": "https://bahaar-ai.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "metadata": {
+    "title": "BAHAAR AI - Crop Disease Detection",
+    "description": "Advanced AI-powered crop disease detection using deep learning to help farmers identify plant diseases efficiently and protect their harvests.",
+    "image": "https://bahaar-ai.vercel.app/og-image.jpg",
+    "url": "https://bahaar-ai.vercel.app",
+    "type": "website",
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@bahaarai"
+    },
+    "og": {
+      "title": "BAHAAR AI - Crop Disease Detection System",
+      "description": "Revolutionary AI system for crop disease detection with 87% accuracy, supporting 38 disease classes across 14 crop types.",
+      "image": "https://bahaar-ai.vercel.app/og-image.jpg",
+      "url": "https://bahaar-ai.vercel.app"
+    }
+  }
+}
