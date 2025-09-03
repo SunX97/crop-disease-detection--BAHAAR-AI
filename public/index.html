@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAHAAR AI - Crop Disease Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>BAHAAR AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-page="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#detection" class="nav-link" data-page="detection">Disease Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dataset" class="nav-link" data-page="dataset">Dataset</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Plant Disease Recognition System
+                        <span class="highlight">🌿🔍</span>
+                    </h1>
+                    <p class="hero-description">
+                        Advanced AI-powered crop disease detection using deep learning to help farmers 
+                        identify plant diseases efficiently and protect their harvests.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>87K+</h3>
+                            <p>Training Images</p>
+                        </div>
+                        <div class="stat">
+                            <h3>38</h3>
+                            <p>Disease Classes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>87%</h3>
+                            <p>Accuracy</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="showPage('detection')">
+                            <i class="fas fa-camera"></i>
+                            Try Disease Detection
+                        </button>
+                        <button class="btn btn-secondary" onclick="showPage('about')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <i class="fas fa-leaf"></i>
+                            <span>AI Analysis</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="analysis-demo">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-image"></i>
+                                </div>
+                                <div class="analysis-result">
+                                    <div class="result-item">
+                                        <span class="label">Detected:</span>
+                                        <span class="value">Tomato Early Blight</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="label">Confidence:</span>
+                                        <span class="value">92.3%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92.3%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>Upload Image</h3>
+                        <p>Simply upload an image of a plant leaf with suspected diseases through our intuitive interface.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Analysis</h3>
+                        <p>Our advanced CNN model processes the image using state-of-the-art deep learning algorithms.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Get Results</h3>
+                        <p>Receive accurate disease identification in seconds with confidence scores and recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crops-section">
+            <div class="container">
+                <h2>Supported Crops</h2>
+                <div class="crops-grid">
+                    <div class="crop-item">
+                        <i class="fas fa-apple-alt"></i>
+                        <span>Apple</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Corn</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>Tomato</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-pepper-hot"></i>
+                        <span>Pepper</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-carrot"></i>
+                        <span>Potato</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-wine-glass"></i>
+                        <span>Grape</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-circle"></i>
+                        <span>Orange</span>
+                    </div>
+                    <div class="crop-item">
+                        <i class="fas fa-cherry"></i>
+                        <span>Cherry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>About BAHAAR AI</h1>
+                <p>Revolutionizing agriculture with artificial intelligence</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>
+                        BAHAAR AI represents a breakthrough in agricultural technology, combining cutting-edge 
+                        deep learning with practical farming needs. Our mission is to empower farmers with 
+                        AI-driven tools that can quickly and accurately identify crop diseases, leading to 
+                        better crop management and increased yields.
+                    </p>
+                    
+                    <h3>Technology Stack</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">TensorFlow 2.16.1</span>
+                        <span class="tech-item">Convolutional Neural Networks</span>
+                        <span class="tech-item">Image Processing</span>
+                        <span class="tech-item">Deep Learning</span>
+                        <span class="tech-item">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <div class="model-info">
+                    <h3>Model Architecture</h3>
+                    <div class="model-specs">
+                        <div class="spec-item">
+                            <strong>Input Size:</strong> 128x128 RGB images
+                        </div>
+                        <div class="spec-item">
+                            <strong>Architecture:</strong> Sequential CNN model
+                        </div>
+                        <div class="spec-item">
+                            <strong>Optimization:</strong> Adam optimizer (LR: 0.0001)
+                        </div>
+                        <div class="spec-item">
+                            <strong>Training Epochs:</strong> 10 epochs
+                        </div>
+                        <div class="spec-item">
+                            <strong>Batch Size:</strong> 32
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="performance-section">
+                <h2>Model Performance</h2>
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <div class="performance-value">87.08%</div>
+                        <div class="performance-label">Validation Accuracy</div>
+                    </div>
+                    <div class="performance-card">
+                        <div class="performance-value">81.01%</div>
+                        <div class="performance-label">Training Accuracy</div>
+                    </div>
+                    <div class="performance-card">
+                        <div class="performance-value">0.023</div>
+                        <div class="performance-label">Final Loss</div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disease Detection Page -->
+    <section id="detection" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Disease Detection</h1>
+                <p>Upload a plant image for AI-powered disease analysis</p>
+            </div>
+
+            <div class="detection-container">
+                <div class="upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <h3>Drop your image here</h3>
+                            <p>or click to browse files</p>
+                            <input type="file" id="imageInput" accept="image/*" hidden>
+                        </div>
+                    </div>
+                    
+                    <div class="image-preview" id="imagePreview" style="display: none;">
+                        <img id="previewImg" alt="Uploaded image">
+                        <div class="image-actions">
+                            <button class="btn btn-primary" id="analyzeBtn">
+                                <i class="fas fa-search"></i>
+                                Analyze Image
+                            </button>
+                            <button class="btn btn-secondary" id="clearBtn">
+                                <i class="fas fa-trash"></i>
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-section" id="resultsSection" style="display: none;">
+                    <div class="analysis-card">
+                        <div class="card-header">
+                            <i class="fas fa-microscope"></i>
+                            <h3>Analysis Results</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="result-main" id="resultMain">
+                                <div class="disease-name" id="diseaseName">Tomato Early Blight</div>
+                                <div class="confidence-score">
+                                    <span>Confidence: </span>
+                                    <span id="confidenceValue">92.3%</span>
+                                </div>
+                                <div class="confidence-bar">
+                                    <div class="confidence-fill" id="confidenceFill"></div>
+                                </div>
+                            </div>
+                            <div class="disease-info" id="diseaseInfo">
+                                <h4>Disease Information</h4>
+                                <p id="diseaseDescription">
+                                    Early blight is a common disease affecting tomato plants, 
+                                    characterized by dark brown spots with concentric rings on leaves.
+                                </p>
+                                <div class="recommendations">
+                                    <h5>Recommendations</h5>
+                                    <ul id="recommendationsList">
+                                        <li>Remove affected leaves immediately</li>
+                                        <li>Apply fungicide treatment</li>
+                                        <li>Improve air circulation around plants</li>
+                                        <li>Avoid overhead watering</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Page -->
+    <section id="dataset" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Dataset Information</h1>
+                <p>Comprehensive details about our training dataset</p>
+            </div>
+
+            <div class="dataset-overview">
+                <div class="dataset-stats">
+                    <div class="stat-card">
+                        <h3>87,000+</h3>
+                        <p>Total Images</p>
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>38</h3>
+                        <p>Disease Classes</p>
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>14</h3>
+                        <p>Crop Types</p>
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>128x128</h3>
+                        <p>Image Resolution</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+
+                <div class="dataset-breakdown">
+                    <h2>Dataset Distribution</h2>
+                    <div class="breakdown-grid">
+                        <div class="breakdown-card">
+                            <h3>Training Set</h3>
+                            <div class="number">70,295</div>
+                            <div class="percentage">80.7%</div>
+                            <div class="bar">
+                                <div class="fill" style="width: 80.7%"></div>
+                            </div>
+                        </div>
+                        <div class="breakdown-card">
+                            <h3>Validation Set</h3>
+                            <div class="number">17,572</div>
+                            <div class="percentage">20.2%</div>
+                            <div class="bar">
+                                <div class="fill" style="width: 20.2%"></div>
+                            </div>
+                        </div>
+                        <div class="breakdown-card">
+                            <h3>Test Set</h3>
+                            <div class="number">33</div>
+                            <div class="percentage">0.1%</div>
+                            <div class="bar">
+                                <div class="fill" style="width: 0.1%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diseases-grid">
+                    <h2>Supported Diseases</h2>
+                    <div class="diseases-container" id="diseasesContainer">
+                        <!-- Diseases will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        Have questions about BAHAAR AI or want to collaborate on agricultural AI projects? 
+                        We'd love to hear from you!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@bahaarai.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/bahaar-ai</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Website</h4>
+                                <p>www.bahaarai.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Analyzing image...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>BAHAAR AI</span>
+                    </div>
+                    <p>Protecting crops with artificial intelligence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#about" onclick="showPage('about')">About</a></li>
+                        <li><a href="#detection" onclick="showPage('detection')">Detection</a></li>
+                        <li><a href="#dataset" onclick="showPage('dataset')">Dataset</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">GitHub Repository</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BAHAAR AI. Made with ❤️ for sustainable agriculture.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
